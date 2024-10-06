@@ -1,0 +1,93 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background.webp') no-repeat center center/cover;
+    font-family: 'Mukta', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+/* Centered ganeshji image */
+.ganeshji {
+    width: 150px;
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+    margin-bottom: 10px; 
+}
+
+/* Heading styling */
+.heading-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 20px; 
+}
+
+/* Invitation text */
+.invitation {
+    color: #8B0000;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+/* Typing text */
+.typing-text {
+    font-size: 1.2rem;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive settings */
+@media (max-width: 768px) {
+    .invitation {
+        font-size: 0.9rem;
+    }
+
+    .heading-text {
+        font-size: 1.8rem;
+    }
+
+    .ganeshji {
+        width: 150px;
+    }
+}
+
+
+/* Existing styles above */
+
+/* Footer styling */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 0.6rem;
+    color: #ffffff;
+    padding: 10px;
+    background-color: rgba(170, 118, 22, 0.5); /* Semi-transparent black background */
+}
